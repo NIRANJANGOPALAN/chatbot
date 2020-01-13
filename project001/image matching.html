@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="image matching.css">
+</head>
+<body>
+    <script src="image matching.js"></script>
+   
+    <h1 class="w-100 text-center">Comparing images</h1> 
+    <h3>Part 1</h3>
+        <img id=dummy style="width:200px; height:100px;position:absolute;">
+
+      <input type="file" class="custom-file-input" id="customFile" accept="image/gif, image/jpeg, image/png" onchange="readURL(this);">
+          <textarea id="base" rows="8" class="form-control">
+      </textarea>
+   <hr>
+   <h3>Part 2</h3>
+   <img id=dummy2 style="width:200px; height:100px;position:absolute;">
+
+ <input type="file" class="custom-file-input" id="customFile2" accept="image/gif, image/jpeg, image/png" onchange="readURL2(this);">
+     <textarea id="base2" rows="8" class="form-control">
+ </textarea>
+ <hr>
+ <button id="result" onclick="res()">Click to compare the images</button>
+ <!-- <textarea id="showresult" placeholder="result" rows="2" cols="30"></textarea><br><br> -->
+</body>
+</html>
